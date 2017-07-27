@@ -42,7 +42,7 @@ tests: $(TESTS)
 
 # The Cleaner 
 clean:
-	rm -rf build $(LIB_OBJECTS) $(OBJECTS) $(EXECUTABLES) $(TESTS)
+	rm -rf bin build $(LIB_OBJECTS) $(OBJECTS) $(EXECUTABLES) $(TESTS)
 	rm -f tests/tests.log
 	find . -name "*.gc*" -exec rm {} \;
 	rm -rf `find . -name "*.dSYM" -print`
